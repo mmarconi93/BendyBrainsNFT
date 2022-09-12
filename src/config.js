@@ -5,8 +5,8 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
+const namePrefix = "BendyBrainsNFT";
+const description = "BendyBrains is a collection of 9,999 unique NFTs hanging out in the Ethereum blockchain. Owning a BendyBrain will grant access to an inclusive Web3 community and will also unlock all the perks on the roadmap and provide holders with future airdrops. Our BendyBrains collection seeks to draw attention to mental health and mental illness. Join us in making a difference in mental health through the wonders of Web3 and the blockchain!";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
@@ -24,15 +24,15 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 10,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Backgrounds" },
+      { name: "Body" },
+      { name: "Eyes" },
+      { name: "Feet" },
+      { name: "Hands" },
+      { name: "Hats" },
+      { name: "Mouth" },
     ],
   },
 ];
@@ -44,7 +44,7 @@ const debugLogs = false;
 const format = {
   width: 512,
   height: 512,
-  smoothing: false,
+  smoothing: true,
 };
 
 const gif = {
@@ -72,7 +72,7 @@ const pixelFormat = {
 };
 
 const background = {
-  generate: true,
+  generate: false,
   brightness: "80%",
   static: false,
   default: "#000000",
